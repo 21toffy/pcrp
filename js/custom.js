@@ -22,6 +22,16 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+$('.navbar .dropdown').hover(function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+    });
+});
+
+
+
+$(document).ready(function () {
     var myButton = $('#mybutton');
     var userFeed = new Instafeed({
         get: 'user',

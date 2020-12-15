@@ -1,3 +1,4 @@
+
 /*
 Template Name: vacayhome
 File Name: style.css
@@ -15,18 +16,467 @@ License URI: http://www.themevault.net/license/
 }
 
 
+.who{
+    font-size: 50px;
+    color: #003154;
+}
+
+
+ul.dropdownmenulist {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+ul.dropdownmenulist > li {
+    float: left;
+    margin: 5px;
+    position: relative;
+}
+ul.dropdownmenulist > li > ul {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    box-shadow: rgba(0,0,0,0.3) 2px 2px 2px;
+}
+
+ul.dropdownmenulist > li:hover > ul {
+    display: block;
+}
+
+
+/*blogg*/
+
+
+.page-section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.page-section:not(.fg-white) h1,
+.page-section:not(.fg-white) h2,
+.page-section:not(.fg-white) h3 {
+  color: #6b6872;
+}
 
 
 
+.blog-entry {
+  position: relative;
+  padding: 24px 0;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ecedf3;
+}
+
+.blog-entry a:not(.btn) {
+  font-weight: 500;
+}
+
+.blog-entry .post-thumbnail {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.blog-entry .post-thumbnail img {
+  width: auto;
+  max-width: 100%;
+}
+
+.entry-header {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.entry-header .post-date {
+  position: absolute;
+  left: 24px;
+  bottom: -16px;
+  width: 68px;
+  height: 65px;
+  text-align: center;
+  background: linear-gradient(to bottom right, #3D58F3, #9548F9);
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(95, 90, 104, 0.342);
+}
+
+.entry-header .post-date h3 {
+  margin-bottom: -4px;
+  color: inherit;
+  font-weight: 400;
+}
+
+.entry-header .post-date span {
+  font-size: 12px;
+}
+
+.blog-entry .post-title {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.blog-entry .post-title a {
+  color: #5F5A68;
+  font-weight: 500;
+  transition: color .2s ease;
+}
+
+.blog-entry .post-title a:hover {
+  color: #3852e7;
+}
+
+.entry-meta {
+  position: relative;
+  display: block;
+  padding-left: 0;
+  list-style: none;
+}
+
+.meta-item {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.meta-item .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 14px;
+  background: linear-gradient(to bottom right, #3D58F3, #9548F9);
+  color: #fff;
+  border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+  .blog-entry {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.blog-single-entry {
+  display: block;
+  padding: 24px 16px;
+  border-bottom: 1px solid #E4E1EB;
+}
+
+.blog-single-entry .post-thumbnail {
+  position: relative;
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.blog-single-entry .post-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-single-entry .post-title {
+  font-size: 40px;
+}
+
+.blog-single-entry .post-date {
+  font-weight: 500;
+  color: #9b99a1;
+}
 
 
+/* Widget */
+.widget-wrap {
+  position: relative;
+  display: block;
+  padding: 20px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #f5f4fa;
+  border-bottom: 3px solid #7b50e6;
+  box-shadow: 0 2px 3px rgba(51, 47, 58, 0.15);
+  z-index: 3;
+}
+
+.widget-title {
+  margin-bottom: 16px;
+}
+
+.search-form .form-group {
+  position: relative;
+}
+
+.search-form .icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
 
 
+.categories {
+  position: relative;
+  display: block;
+  list-style: none;
+  padding-left: 24px;
+}
+
+.categories li {
+  position: relative;
+  display: block;
+  margin: 6px auto;
+}
+
+.categories li::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -21px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px #526bf5;
+}
+
+.categories li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: -19px;
+  width: 1px;
+  height: 100%;
+  background-color: #cac7cf;
+  z-index: -2;
+}
+
+.categories li a {
+  font-weight: 500;
+  color: #526bf5;
+}
+
+.categories li span {
+  float: right;
+}
+
+.blog-widget {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0 16px 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #E4E1EB;
+}
+
+.blog-widget .blog-img {
+  flex: 1 0 auto;
+  margin-right: 12px;
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.blog-widget .blog-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.blog-widget .meta {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.blog-widget .meta a {
+  display: inline-block;
+  margin-right: 8px;
+  color: #9b99a1;
+}
 
 
+.tag-clouds {
+  position: relative;
+  display: block;
+}
+
+.tag-cloud-link {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 3px auto;
+  color: #797585;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #E4E1EB;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(51, 47, 58, 0.15);
+}
+
+.tag-cloud-link:hover {
+  text-decoration: none;
+}
 
 
+/* Comments */
+.comment-area {
+  display: block;
+  padding: 20px 16px;
+  overflow: hidden;
+}
 
+.comment-list {
+  padding: 0;
+  margin: 0;
+}
+
+.comment-list .children {
+  padding: 20px 0 0 0;
+  margin: 0;
+  float: left;
+  width: 100%;
+}
+
+.comment-list .children .comment:last-child {
+  margin-bottom: 0;
+}
+
+.comment-list li {
+  padding: 0;
+  margin: 0 0 30px 0;
+  float: left;
+  width: 100%;
+  clear: both;
+  list-style: none;
+}
+
+.comment-list li .vcard {
+  width: 60px;
+  float: left;
+}
+
+.comment-list li .vcard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.comment-list li .comment-body {
+  float: right;
+  width: calc(100% - 80px);
+}
+
+.comment-list li .comment-body h3 {
+  font-size: 21px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.comment-list li .comment-body .meta {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .1em;
+  margin-bottom: 16px;
+  color: #ADA8B4;
+}
+
+.comment-list li .comment-body .reply {
+  padding: 8px 16px;
+  background: #eaebf0;
+  color: #5D5856;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 40px;
+  transition: all .3s ease;
+}
+
+.comment-list li .comment-body .reply:hover {
+  background: #dbdde4;
+  color: #212529;
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  .comment-list .children {
+    padding: 20px 0 0 40px;
+  }
+}
+
+/*blog end*/
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.img-responsive{
+    
+}
 
 
 
@@ -89,7 +539,8 @@ a, a:hover, a:focus, button:hover, button:focus {
     text-decoration: none;
 }
 a:focus ,a:hover{
-    color: #ff4157;
+    color: #003154;
+
 }
 ul{
     margin: 0;
@@ -120,7 +571,7 @@ ul{
     text-align: center;
 }
 .social-grid li a:hover{
-    color: #ff4157;
+    color: #21759b;
 }
 .social-grid li + li{
     margin-left: 25px;
@@ -176,6 +627,32 @@ ul{
     text-transform: capitalize;
 }
 
+
+#myCarousel1 .carousel-caption-f {
+    bottom: auto;
+    color: #fff;
+    left: 50%;
+    position: absolute;
+    right: auto;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 0;
+}
+#myCarousel1 .carousel-caption-f h1 {
+    color: #fff;
+    font-family: "exotc350_dmbd_btdemi-bold";
+    font-size: 85px;
+    letter-spacing: 2px;
+
+    text-transform: capitalize;
+}
+
+
+
+
 /*common*/
 .service-block, .gallery-block, .vacation-offer-block, .resort-overview-block, .blog-block, .blog-block-slider, .about-block, .contact-block, .blog{
     padding: 70px 0 0 0;
@@ -189,7 +666,7 @@ ul{
     padding: 35px 0;
 }
 #logo > a {
-    color: #ff4157;
+    color: #21759b;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -5px;
@@ -199,7 +676,7 @@ ul{
     font-size: 50px;
 }
 .book-now-btn {
-    background: #ff4157 none repeat scroll 0 0;
+    background: #21759b none repeat scroll 0 0;
     border: medium none;
     color: #fff;
     font-size: 16px;
@@ -236,7 +713,7 @@ ul{
     transform: translateX(0%);
 }
 .cl-effect-10 a.active{
-    color: #ff;
+    color: #fff;
 }
 .cl-effect-10 {
     position: relative;
@@ -362,10 +839,10 @@ ul{
     color: #fff;
 }
 .overlay p a:hover{
-    color: #ff4157;
+    color: #21759b;
 }
 .vacation-offer-bgbanner {
-    background: rgba(0, 0, 0, 0) url("../images/vacation-banner.png") no-repeat scroll center center / cover ;
+    background: rgba(0, 0, 0, 0) url("../images/socials/drive2.jpg") no-repeat scroll center center / cover ;
     color: #fff;
     position: relative;
     padding: 65px;
@@ -389,7 +866,7 @@ ul{
     text-transform: uppercase;
 }
 .vacation-offer-details .btn.btn-default {
-    background: #ff4157 none repeat scroll 0 0;
+    background: #21759b none repeat scroll 0 0;
     border: medium none;
     border-radius: 0;
     color: #fff;
@@ -414,7 +891,7 @@ ul{
   text-align: center;
   color: white;
 }
-.image {
+.image img {
     margin-left: auto;
     margin-right: auto;
       position: relative;
@@ -424,25 +901,10 @@ ul{
 
 
 .cons{
-  position: absolute;
-  bottom: 50px;
-  right: 20px;
+      position: relative;
+  text-align: center;
   color: white;
-  font-weight: bolder;
-  padding-left: 20px;
-  padding-right: 20px;
 }
-.cons-button{
-  position: absolute;
-  bottom: 10px;
-  /*right: 1px;*/
-  color: #fff;
-  font-weight: bolder;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-
 .product-desc-side {
     display: flex;
     flex-direction: column;
@@ -464,6 +926,7 @@ ul{
     text-transform: uppercase;
     color: #003154;
 }
+
 .product-desc-side h3::before {
     background: #21759b;
     bottom: -1px;
@@ -480,6 +943,38 @@ ul{
 .product-desc-side > p {
     margin: 22px 0;
 }
+
+
+
+.second-product-desc-side h3 {
+    border-bottom: 1px dashed #ddd;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding:24px 0 0 0;
+    position: relative;
+    text-transform: uppercase;
+    color: #003154;
+}
+
+.second-product-desc-side h3::before {
+    background: #21759b;
+    bottom: -1px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 35px;
+    transition: width 0.9s;
+}
+.second-product-desc-side:hover h3:before{
+    width: 100%;
+}
+.second-product-desc-side > p {
+    margin: 22px 0;
+}
+
+
 .links > a , .event-blog-details a.btn-default{
     border: 1px solid;
     display: inline-block;
@@ -488,8 +983,8 @@ ul{
     border-radius: 0;
 }
 .links > a:hover, .event-blog-details a.btn-default:hover{
-    background: #003154;
-    border-color: #003154;
+    background: #21759b;
+    border-color: #21759b;
     color: #fff;
 }
 .side-A .product-desc-side {
@@ -538,7 +1033,7 @@ footer a{
     color: #fff;
 }
 .footer-contact-list i {
-    color: #ff4157;
+    color: #21759b;
     float: left;
     margin-right: 10px;
 }
@@ -562,7 +1057,7 @@ footer a{
     text-transform: capitalize;
 }
 .footer-links li.active a{
-    color: #ff4157;
+    color: #21759b;
 }
 .footer-social-icon {
     margin-top: 40px;
@@ -601,7 +1096,7 @@ footer a{
     border-radius: 0;
     border-style: solid solid solid none;
     border-width: 1px 1px 1px 0;
-    color: #ff4157;
+    color: #21759b;
     background: #fff;
 }
 /*blog slider*/
@@ -640,7 +1135,7 @@ footer a{
     padding-bottom: 10px;
 }
 .blog-view-box {
-    background: #ff4157 none repeat scroll 0 0;
+    background: #21759b none repeat scroll 0 0;
     border-radius: 15px;
     color: #fff;
     margin-top: -15px;
@@ -730,7 +1225,7 @@ footer a{
     text-align: center;
 }
 .copyright > a{
-    color: #ff4157;
+    color: #21759b;
     font-weight: 600;
     font-size: 18px;
 }
@@ -777,7 +1272,7 @@ footer a{
     left: 0;
     top: 0;
     font-family: 'fontawesome';
-    color: #ff4157;
+    color: #21759b;
     font-weight: 600;
 }
 .about-right span {
@@ -797,7 +1292,7 @@ footer a{
     text-transform: capitalize;
 }
 .contact-left-block > h3 > span, .contact-form > h3 > span{
-    color: #ff4157;
+    color: #21759b;
 }
 .contact-left-block > p {
     color: #000;
@@ -807,7 +1302,7 @@ footer a{
     margin-bottom: 15px;
 }
 .contact-left-block > p i {
-    background: #ff4157 none repeat scroll 0 0;
+    background: #21759b none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     height: 30px;
@@ -837,8 +1332,8 @@ footer a{
     text-transform: uppercase;
 }
 .submit-btn:hover, .read-more-btn:hover{
-    background: #ff4157;
-    border-color: #ff4157;
+    background: #21759b;
+    border-color: #21759b;
     color: #fff;
 }
 .contact-form form textarea{
@@ -881,7 +1376,7 @@ footer a{
     margin-bottom: 15px;
 }
 .user-info > a{
-    color: #ff4157;
+    color: #21759b;
 }
 .user-info > a:hover{
     color: #333;
@@ -893,7 +1388,7 @@ footer a{
     height: 140px;
 }
 .blog-list h4, .blog-list1 h4 {
-    border-bottom: 2px solid #ff4157;
+    border-bottom: 2px solid #21759b;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -984,3 +1479,4 @@ footer a{
 #instafeed > div:nth-last-child(-n+3) {
     margin-top: 15px;
 }
+
